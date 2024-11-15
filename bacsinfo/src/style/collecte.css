@@ -1,0 +1,71 @@
+/* Style pour le conteneur principal */
+.collecte-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Style pour la barre de recherche */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 300px;
+}
+
+/* Style pour le champ de saisie */
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+/* Style pour le bouton de recherche */
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style pour l'icône de recherche */
+.search-icon {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Style au survol du bouton de recherche */
+.search-button:hover .search-icon {
+  color: #007bff;
+}
+/* Style pour la liste des résultats */
+.collecte-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.collecte-list li {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Style pour le message aucun résultat */
+.collecte-container p {
+  margin-top: 20px;
+  color: #ff0000;
+  font-weight: bold;
+}

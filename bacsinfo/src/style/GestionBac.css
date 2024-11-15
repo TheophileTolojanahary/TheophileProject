@@ -1,0 +1,86 @@
+.GBcss-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.GBcss-tab-content {
+    margin-top: 20px;
+}
+
+.GBcss-gestion-bac-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.GBcss-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.GBcss-input-group {
+    display: flex;
+    align-items: center;
+}
+
+.GBcss-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.GBcss-select-location-button,
+.GBcss-add-bac-button,
+.GBcss-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.GBcss-button:hover {
+    background-color: #0056b3;
+}
+
+.GBcss-notification {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+}
+
+.GBcss-scrollable-table {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.GBcss-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.GBcss-th-td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.GBcss-th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: left;
+}

@@ -1,0 +1,107 @@
+.insCcl-inscription-collecteur {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.insCcl-form-group {
+    display: flex;
+    align-items: center; /* Alignement vertical des labels et champs */
+    margin-bottom: 20px;
+}
+
+label {
+    width: 150px; /* Largeur fixe pour les labels afin d'assurer un alignement à gauche uniforme */
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px; /* Espacement entre le label et le champ de saisie */
+}
+
+input {
+    flex: 1; /* Le champ de saisie prend toute la place disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.insCcl-input-icon {
+    position: relative;
+}
+
+.insCcl-input-icon input {
+    padding-right: 40px; /* Espacement à droite pour l'icône de mot de passe */
+}
+
+.insCcl-password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .insCcl-inscription-collecteur {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+    }
+}
+
+
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.notification {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .notification.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  

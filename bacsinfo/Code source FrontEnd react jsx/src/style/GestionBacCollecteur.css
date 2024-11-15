@@ -1,0 +1,15 @@
+.gestion-bac-collecteur {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gestion-bac-collecteur h1 {
+    font-size: 24px;
+    color: #dc3545;
+  }
+  
+  .gestion-bac-collecteur p {
+    font-size: 16px;
+    color: #333;
+  }
+  

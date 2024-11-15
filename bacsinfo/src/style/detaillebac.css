@@ -1,0 +1,68 @@
+/* Style principal du tableau de bord */
+.dashboard-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Icone de notification */
+.notification-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #3b82f6; /* Couleur bleue */
+}
+
+/* Style des bacs */
+.bac-levels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.bac.selected {
+  border: 2px solid #3b82f6;
+}
+
+.circular-chart {
+  width: 80px;
+  height: 80px;
+}
+
+.bac-info h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Style de notification */
+.notification {
+  background-color: #f87171;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 100;
+}

@@ -1,0 +1,15 @@
+.map-collecteur {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .map-collecteur h1 {
+    font-size: 24px;
+    color: #28a745;
+  }
+  
+  .map-collecteur p {
+    font-size: 16px;
+    color: #333;
+  }
+  

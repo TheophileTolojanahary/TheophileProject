@@ -1,0 +1,163 @@
+/* Style principal du tableau de bord */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f4f6;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style des bacs */
+  .bac-levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .bac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    transition: border-color 0.3s; /* Transition pour le changement de couleur */
+  }
+  
+  .bac.selected {
+    border: 2px solid green; /* Bordure verte pour le bac sélectionné */
+  }
+  
+  .bac-gauge {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .circular-chart {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 3.8;
+    stroke: #3b82f6; /* Couleur de la jauge (bleu) */
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+  }
+  
+  .bac-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Informations des bacs */
+  .bac-info {
+    margin-top: 10px;
+  }
+  
+  .bac-info h4 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .bac-info p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Styles de pagination */
+  .pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .pagination-controls button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Style pour le dashboard-parametre */
+  .dashboard-parametre {
+    margin-top: 20px; /* Espacement au-dessus */
+    padding: 15px; /* Espacement interne */
+    background-color: #ffffff; /* Couleur de fond blanche */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  .dashboard-parametre label {
+    display: block; /* Affichage en bloc pour une meilleure présentation */
+    margin-bottom: 5px; /* Espacement en bas du label */
+  }
+  
+  .dashboard-parametre select {
+    width: 100%; /* Largeur pleine pour le sélecteur */
+    padding: 8px; /* Espacement interne */
+    margin-bottom: 10px; /* Espacement en bas du sélecteur */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+  }
+  
+  /* Style pour le slider */
+  .slider-container {
+    display: flex;
+    align-items: center; /* Alignement vertical centré */
+  }
+  
+  .slider-container input[type="range"] {
+    margin-left: 10px; /* Espace entre le label et le slider */
+  }
+  
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s forwards; /* Animation d'apparition */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%); /* Départ de la droite */
+    }
+    to {
+      transform: translateX(0); /* Fin à la position d'origine */
+    }
+  }
+  

@@ -1,0 +1,131 @@
+/* Style pour le conteneur principal */
+.accueil-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour l'alignement horizontal des éléments d'information */
+.info-wrapper {
+  display: flex;
+  gap: 10px; /* Espacement de 10px entre chaque élément */
+  margin-bottom: 30px;
+}
+
+.info-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1; /* Assurer une largeur égale pour chaque boîte */
+}
+
+.info-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.info-box p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #343a40;
+}
+
+/* Style pour le conteneur chart et calendrier */
+.chart-calendar-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Style pour le conteneur de graphique */
+.chart-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #343a40;
+}
+
+/* Style pour le conteneur de calendrier */
+.calendar-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-container h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #343a40;
+}
+
+.calendar-container h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #007bff;
+}
+
+/* Style pour l'historique de collecte */
+.historique {
+  margin-bottom: 30px;
+}
+
+.historique h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Style pour la section graphique */
+.graph-section {
+  margin-bottom: 30px;
+}
+
+.graph-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Style pour la section taux de collecte */
+.taux-section {
+  text-align: center;
+}
+
+.taux-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.taux-section p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #28a745;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #555;
+}

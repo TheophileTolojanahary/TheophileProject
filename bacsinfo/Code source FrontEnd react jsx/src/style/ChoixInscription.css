@@ -1,0 +1,50 @@
+.choix-inscription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(183, 241, 255, 0.897); 
+  background-color: #f9f9f9; /* Fond clair */
+  transition: transform 0.2s; /* Effet de transformation */
+}
+
+.choix-inscription-container:hover {
+  transform: scale(1.02); 
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333; /* Couleur du texte */
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px; /* Augmente la taille de la police */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transition sur couleur et transformation */
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px); /* Effet de levée au survol */
+}
+
+@media (max-width: 600px) {
+  .choix-inscription-container {
+    width: 90%; /* S'assure que le conteneur est responsive */
+  }
+  .btn {
+    width: 100%; /* Les boutons prennent toute la largeur sur les petits écrans */
+    padding: 15px; /* Augmente le padding pour une meilleure accessibilité */
+    font-size: 18px; /* Augmente la taille de la police sur les petits écrans */
+  }
+}

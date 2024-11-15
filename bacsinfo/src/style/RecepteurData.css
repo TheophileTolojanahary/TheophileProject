@@ -1,0 +1,79 @@
+/* RecepteurData.css */
+
+.receiver-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Centrer le conteneur */
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h2 {
+  text-align: center; /* Centre le titre */
+  color: #333; /* Couleur sombre pour le texte */
+  margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+.slider-container {
+  display: flex; /* Utilisation de Flexbox pour aligner le curseur et le texte */
+  align-items: center; /* Aligner verticalement */
+  justify-content: space-between; /* Espace égal entre le curseur et le texte */
+}
+
+input[type="range"] {
+  flex-grow: 1; /* Le curseur prend tout l'espace disponible */
+  margin-right: 10px; /* Espacement à droite du curseur */
+  -webkit-appearance: none; /* Supprimer le style par défaut du curseur */
+  appearance: none; /* Supprimer le style par défaut du curseur */
+  height: 8px; /* Hauteur du curseur */
+  border-radius: 5px; /* Coins arrondis pour le curseur */
+  background: #007bff; /* Couleur de fond du curseur */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Supprimer le style par défaut du pouce */
+  appearance: none; /* Supprimer le style par défaut du pouce */
+  width: 20px; /* Largeur du pouce */
+  height: 20px; /* Hauteur du pouce */
+  border-radius: 50%; /* Rendre le pouce rond */
+  background: #fff; /* Couleur du pouce */
+  border: 2px solid #007bff; /* Bordure du pouce */
+  cursor: pointer; /* Curseur pointer pour indiquer cliquable */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Largeur du pouce */
+  height: 20px; /* Hauteur du pouce */
+  border-radius: 50%; /* Rendre le pouce rond */
+  background: #fff; /* Couleur du pouce */
+  border: 2px solid #007bff; /* Bordure du pouce */
+  cursor: pointer; /* Curseur pointer pour indiquer cliquable */
+}
+
+.percentage-display {
+  font-size: 20px; /* Taille de la police pour l'affichage du pourcentage */
+  font-weight: bold; /* Mettre le texte en gras */
+}
+
+.error-message {
+  color: red; /* Couleur rouge pour le message d'erreur */
+  text-align: center; /* Centre le message d'erreur */
+  margin-top: 10px; /* Espacement au-dessus du message d'erreur */
+}
+
+/* Styles responsives */
+@media (max-width: 600px) {
+  .receiver-container {
+      padding: 15px; /* Réduire l'espacement sur les petits écrans */
+  }
+
+  h2 {
+      font-size: 24px; /* Réduire la taille du titre */
+  }
+
+  .percentage-display {
+      font-size: 18px; /* Réduire la taille de l'affichage du pourcentage */
+  }
+}

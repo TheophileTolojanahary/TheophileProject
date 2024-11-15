@@ -1,0 +1,192 @@
+/* Style général du conteneur */
+.Clsnm-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.Clsnm-container h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Boutons de section */
+.Clsnm-containerbtn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-animated, .Clsnm-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-animated {
+  background-color: #007bff;
+}
+
+.btn-animated:hover {
+  background-color: #0056b3;
+}
+
+.Clsnm-button {
+  background-color: #28a745;
+  display: flex;
+  align-items: center;
+}
+
+.Clsnm-button svg {
+  margin-right: 5px;
+}
+
+.Clsnm-button:hover {
+  background-color: #218838;
+}
+
+/* Formulaire d'ajout */
+.Clsnm-form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Clsnm-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.Clsnm-input:focus {
+  border-color: #007bff;
+}
+
+/* Password container */
+.password-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.password-container span {
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Notifications */
+.Clsnm-notification, .Clsnm-delete-confirmation {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.Clsnm-notification {
+  background-color: #e9f7e9;
+  color: #2d6a4f;
+  border-left: 4px solid #28a745;
+}
+
+.Clsnm-delete-confirmation {
+  background-color: #ffe0e0;
+  color: #a71d2a;
+  padding: 15px;
+  border-left: 4px solid #dc3545;
+}
+
+.Clsnm-confirm-button, .Clsnm-cancel-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Clsnm-confirm-button {
+  background-color: #dc3545;
+}
+
+.Clsnm-cancel-button {
+  background-color: #6c757d;
+}
+
+/* Table stylisée */
+.Clsnm-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.Clsnm-table th, .Clsnm-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.Clsnm-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.Clsnm-table td {
+  background-color: #f8f9fa;
+}
+
+.Clsnm-table tbody tr:hover {
+  background-color: #e2e6ea;
+}
+
+.Clsnm-table button {
+  color: #dc3545;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Clsnm-table button:hover {
+  color: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Clsnm-form-group {
+    flex-direction: column;
+  }
+
+  .Clsnm-containerbtn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Clsnm-button, .btn-animated {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.Clsnm-table-container {
+  max-height: 300px; 
+  overflow-y: auto; /* Active le défilement vertical */
+}
+
+.Clsnm-table thead {
+  position: sticky; /* Rend le header fixe */
+  top: 0; /* Place le header en haut */
+  background-color: #007bff; /* Couleur de fond pour le header */
+  color: #fff; /* Couleur du texte pour le header */
+  z-index: 10; /* Assurez-vous qu'il soit au-dessus des autres éléments */
+}

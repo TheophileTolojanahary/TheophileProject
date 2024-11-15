@@ -1,0 +1,67 @@
+/* Conteneur principal */
+.choix-inscription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f9f9f9, #e0e0e0);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.choix-inscription-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre */
+.choix-inscription-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Boutons stylisés */
+.btn {
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 300px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Ajustements pour petits écrans */
+@media (max-width: 600px) {
+  .choix-inscription-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}

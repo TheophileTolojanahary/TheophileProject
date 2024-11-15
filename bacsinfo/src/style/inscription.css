@@ -1,0 +1,91 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f0f0;
+}
+
+/* Conteneur principal */
+.inscriptionCSS-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section du formulaire */
+.inscriptionCSS-form-section {
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Section de l'image */
+.inscriptionCSS-image-section {
+  margin-left: 20px;
+}
+
+.inscriptionCSS-image {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Groupe de formulaire */
+.inscriptionCSS-form-group {
+  margin-bottom: 20px;
+}
+
+/* Label des champs */
+.inscriptionCSS-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Champ d'entrée */
+.inscriptionCSS-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inscriptionCSS-input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton d'inscription */
+.inscriptionCSS-button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inscriptionCSS-button:hover {
+  background-color: #3e8e41;
+}
+
+/* Notification */
+.inscriptionCSS-notification {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}

@@ -1,0 +1,158 @@
+/* Variables pour les couleurs */
+:root {
+  --primary-color: #34a853;
+  --secondary-color: #e8f5e9;
+  --accent-color: #1e88e5;
+  --text-color: #2c3e50;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframes pour les animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.Entree-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--secondary-color), #ffffff);
+  animation: fadeIn 1s ease-out;
+}
+
+.Entree-image {
+  position: absolute;
+  top: 50%;
+  margin-right: 20px; /* Ajoute une marge de 20px à droite */
+  transform: translateY(-50%); /* Uniquement centrage vertical */
+  width: 50%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px var(--shadow-color);
+  transition: all 0.4s ease;
+  animation: float 6s ease-in-out infinite;
+}
+
+.Entree-image:hover {
+  transform: translateY(-52%) scale(1.02);
+  box-shadow: 0 12px 25px var(--shadow-color);
+}
+
+/* Modifier l'animation float pour ne gérer que le mouvement vertical */
+@keyframes float {
+  0% { transform: translateY(-50%); }
+  50% { transform: translateY(-60%); }
+  100% { transform: translateY(-50%); }
+}
+
+.Entree-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px var(--shadow-color);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+.Entree-text:hover {
+  transform: translateY(-52%) scale(1.05);
+  color: var(--primary-color);
+}
+
+.Entree-quote {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-out 0.6s backwards;
+}
+
+.Entree-quote:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.Entree-button-container {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-out 0.9s backwards;
+}
+
+.Entree-start-button {
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.Entree-start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px var(--shadow-color);
+  background-color: #2d9249;
+}
+
+.Entree-start-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px var(--shadow-color);
+}
+
+/* Effet de ripple sur le bouton */
+.Entree-start-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+.Entree-start-button:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+.Entree-image {
+  position: absolute;
+  top: 50%;
+  margin-right: 20px; /* Ajoute une marge de 20px à droite */
+  transform: translateY(-50%); /* Uniquement centrage vertical */
+  width: 100%; /* Agrandissement de la largeur de l'image */
+  max-width: 400px; /* Réglage de la taille maximale de l'image pour l'agrandir */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px var(--shadow-color);
+  transition: all 0.4s ease;
+  animation: float 6s ease-in-out infinite;
+}

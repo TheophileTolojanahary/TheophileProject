@@ -1,0 +1,17 @@
+.coordinates-display {
+  position: absolute; /* Positionnement absolu */
+  top: 10px; /* Distance du haut */
+  left: 50%; /* Définir à 50% de la largeur */
+  transform: translateX(-50%); /* Déplacer à gauche de 50% de sa propre largeur */
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+  padding: 15px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre */
+  z-index: 1000; /* Assure que le div est au-dessus de la carte */
+  font-size: 16px; /* Taille de la police */
+  text-align: center; /* Centrer le texte à l'intérieur du div */
+}
+
+.add-button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}

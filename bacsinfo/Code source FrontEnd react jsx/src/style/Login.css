@@ -1,0 +1,173 @@
+/* Container principal */
+.loginCSS-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  padding: 0 20px;
+}
+
+/* Conteneur parent pour aligner les hauteurs */
+.container {
+  display: flex;
+  align-items: stretch;
+  height: 100vh; 
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la taille totale */
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 1000%;
+  max-width: 400px;
+  text-align: center;
+  margin: 50px 0; /* Marge de 50px en haut et en bas */
+  height: calc(100% - 100px); /* Ajustement de la hauteur en fonction des marges */
+  border-radius: 12px 0 0 12px; /* Bordures arrondies */
+}
+
+/* Form Container */
+.loginCSS-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0 12px 12px 0; /* Bordure arrondie à droite */
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border-left: 2px solid #f7f7f7; /* Bordure légère */
+  margin: 50px 0; /* Marge de 50px en haut et en bas */
+}
+
+.loginCSS-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.loginCSS-form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.loginCSS-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.loginCSS-input-wrapper {
+  position: relative;
+}
+
+.loginCSS-input-wrapper input {
+  width: 100%;
+  padding: 12px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  box-sizing: border-box; 
+  height: 45px; 
+}
+
+.loginCSS-input-wrapper input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.loginCSS-show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.loginCSS-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginCSS-form button[type="submit"]:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Effet de survol */
+}
+
+.loginCSS-form p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .loginCSS-form {
+    padding: 20px;
+  }
+
+  .loginCSS-form h2 {
+    font-size: 22px;
+  }
+
+  .loginCSS-form-group label {
+    font-size: 12px; /* Réduire la taille de police pour les petits écrans */
+  }
+
+  .loginCSS-input-wrapper input {
+    height: 40px; /* Ajuster la hauteur des champs d'entrée */
+  }
+
+  .loginCSS-form button[type="submit"] {
+    font-size: 14px; /* Réduire la taille de police pour les petits écrans */
+  }
+}
+
+.loginCSS-error-message {
+  position : fixed; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: rgba(255, 212, 212, 0.8); 
+  color: rgb(0, 0, 0); 
+  padding: 10px 15px; 
+  border-radius: 8px; 
+  z-index: 1000; 
+  transition: opacity 0.3s ease; 
+}
+
+.loginCSS-error-message.hide {
+  opacity: 0; 
+}
+
+.loginCSS-role-toggle {
+  display: flex;
+  flex-direction: column; /* Aligne les options verticalement */
+  margin-top: 20px; /* Ajoute un espace au-dessus */
+}
+
+.role-option {
+  margin: 10px 0; /* Espace entre chaque option */
+}
+
+/* Redimensionner l'image logo */
+.logo-image {
+  width: 90%;
+  height: auto; /* Maintient le ratio de l'image */
+}

@@ -1,0 +1,184 @@
+/* Style général du conteneur */
+.CSSintCltr-sidebar-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff; /* Fond clair pour le conteneur */
+}
+
+/* Sidebar */
+.CSSintCltr-sidebar {
+  background-color: #f0f0f0; /* Fond clair pour la sidebar en mode éclairé */
+  height: 100vh;
+  width: 200px;
+  transition: width 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Ombre similaire pour le mode éclairé */
+}
+
+.CSSintCltr-sidebar.CSSintCltr-closed {
+  width: 50px;
+}
+
+/* Top section */
+.CSSintCltr-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  color: #333; /* Couleur sombre pour le texte en mode clair */
+  background-color: #e0e0e0; /* Fond clair pour le haut de la sidebar */
+}
+
+.CSSintCltr-logo {
+  width: 100px; /* Largeur de l'image */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  margin-left: 15px; /* Espace à gauche */
+}
+
+.CSSintCltr-logo.CSSintCltr-closed {
+  display: none;
+}
+
+.CSSintCltr-bars {
+  font-size: 22px;
+  cursor: pointer;
+  color: #333; /* Couleur sombre pour l'icône de menu */
+  margin-left: 44px;
+}
+
+.CSSintCltr-bars.CSSintCltr-closed {
+  margin-left: 0;
+}
+
+/* Menu item links */
+.CSSintCltr-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #333; /* Couleur sombre pour les liens en mode clair */
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Bordure arrondie */
+}
+
+.CSSintCltr-link:hover {
+  background-color: #d0d0d0; /* Couleur claire au survol */
+}
+
+.CSSintCltr-link.CSSintCltr-active {
+  background-color: #a3afb8; /* Couleur active similaire */
+  border-left: 4px solid #fff;
+  color: #ffffff; /* Texte blanc pour le lien actif */
+}
+
+.CSSintCltr-icon {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #333; /* Couleur sombre pour les icônes */
+}
+
+.CSSintCltr-link-text {
+  font-size: 16px;
+  color: #333; /* Couleur sombre pour le texte des liens */
+}
+
+.CSSintCltr-link-text.CSSintCltr-closed {
+  display: none;
+}
+
+/* Main content */
+.CSSintCltr-main-content {
+  margin-left: 200px;
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+  width: calc(100% - 200px);
+  background-color: #f0f0f0; /* Fond clair pour le contenu principal */
+  color: #333; /* Texte sombre */
+}
+
+.CSSintCltr-main-content.CSSintCltr-closed {
+  margin-left: 50px;
+  width: calc(100% - 50px);
+}
+
+/* Mode sombre */
+.ccdark .CSSintCltr-sidebar {
+  background-color: #444; /* Fond de la sidebar en mode sombre */
+}
+
+.ccdark .CSSintCltr-top-section {
+  background-color: #555; /* Fond du haut de la sidebar en mode sombre */
+  color: #ffffff; /* Texte blanc dans le haut de la sidebar */
+}
+
+.ccdark .CSSintCltr-logo {
+  color: #ffffff; /* Logo blanc en mode sombre */
+}
+
+.ccdark .CSSintCltr-bars {
+  color: #ffffff; /* Icône de menu blanche en mode sombre */
+}
+
+.ccdark .CSSintCltr-link {
+  color: #ffffff; /* Liens blancs en mode sombre */
+}
+
+.ccdark .CSSintCltr-link:hover {
+  background-color: #666; /* Couleur au survol en mode sombre */
+  color: #ffffff; /* Garder le texte blanc au survol */
+}
+
+.ccdark .CSSintCltr-link.CSSintCltr-active {
+  background-color: #2980b9; /* Couleur active en mode sombre */
+  color: #ffffff; /* Lien actif blanc */
+}
+
+.ccdark .CSSintCltr-icon {
+  color: #ffffff; /* Icône blanche en mode sombre */
+}
+
+.ccdark .CSSintCltr-link-text {
+  color: #ffffff; /* Texte des liens blanc en mode sombre */
+}
+
+.ccdark .CSSintCltr-main-content {
+  background-color: #222; /* Fond du contenu principal en mode sombre */
+  color: #ffffff; /* Texte clair */
+}
+
+/* Toggle mode styling */
+.CSSintCltr-mode-toggle {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CSSintCltr-mode-toggle .ccmode-text {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333; /* Texte sombre pour le toggle */
+}
+
+/* Icône de basculement de la sidebar */
+.CSSintCltr-toggle-icon {
+  position: fixed;
+  top: 20px; /* Ajustez la position verticale selon vos besoins */
+  left: 175px; /* Ajustez la position horizontale selon vos besoins */
+  font-size: 22px; /* Taille de l'icône */
+  cursor: pointer;
+  z-index: 101; /* Doit être au-dessus de la barre latérale */
+  transition: left 0.3s ease; /* Transition fluide */
+}
+
+.CSSintCltr-toggle-icon.CSSintCltr-closed {
+  left: 60px; /* Ajustez cette valeur pour éviter le chevauchement avec le contenu */
+}

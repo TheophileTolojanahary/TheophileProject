@@ -1,0 +1,167 @@
+/* Style général du conteneur */
+.ccsideb-sidebar-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Sidebar */
+.ccsideb-sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 200px;
+    transition: width 0.3s ease;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+.ccsideb-sidebar.ccsideb-closed {
+    width: 50px;
+}
+
+/* Top section */
+.ccsideb-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: #333;
+    background-color: #e0e0e0;
+}
+
+.ccsideb-logo {
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.ccsideb-bars {
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    margin-left: auto;
+}
+
+/* Menu item links */
+.ccsideb-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+.ccsideb-link:hover {
+    background-color: #d0d0d0;
+}
+.ccsideb-link.ccsideb-active {
+    background-color: #a3afb8;
+    border-left: 4px solid #fff;
+    color: #ffffff;
+}
+.ccsideb-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #333;
+}
+.ccsideb-link-text {
+    font-size: 16px;
+    color: #333;
+}
+.ccsideb-link-text.ccsideb-closed {
+    display: none;
+}
+
+/* Contenu principal */
+.ccsideb-main-content {
+    margin-left: 200px;
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+    width: calc(100% - 200px);
+    background-color: #f0f0f0;
+    color: #333;
+}
+.ccsideb-main-content.ccsideb-closed {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+}
+
+/* Mode sombre */
+.ccdark {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-sidebar {
+    background-color: #444;
+}
+
+.ccdark .ccsideb-top-section {
+    background-color: #555;
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-bars {
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-link {
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-link:hover {
+    background-color: #666;
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-active {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-icon {
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-link-text {
+    color: #ffffff;
+}
+
+.ccdark .ccsideb-main-content {
+    background-color: #222;
+}
+
+/* Bouton de changement de mode */
+.ccsideb-mode-toggle {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ccsideb-mode-toggle .ccmode-text {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.ccdark .ccsideb-mode-toggle .ccmode-text {
+    color: #ffffff;
+}
+
+.ccsideb-mode-toggle svg {
+    font-size: 20px;
+    color: #333;
+}
+
+.ccdark .ccsideb-mode-toggle svg {
+    color: #ffffff;
+}

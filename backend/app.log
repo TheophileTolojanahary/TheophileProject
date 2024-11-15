@@ -1,0 +1,288 @@
+2024-09-21T10:41:05.280+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T10:41:05.655+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T10:41:06.218+02:00  INFO 8088 --- [backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T10:41:06.219+02:00  INFO 8088 --- [backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T10:41:11.851+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T10:41:11.915+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 JPA repository interfaces.
+2024-09-21T10:41:14.578+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T10:41:14.646+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T10:41:14.647+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T10:41:14.819+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T10:41:14.820+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8599 ms
+2024-09-21T10:41:16.098+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T10:41:16.854+02:00  INFO 8088 --- [backend] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-21T10:41:16.967+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T10:41:17.721+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T10:41:17.848+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T10:41:19.621+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7acd7e37
+2024-09-21T10:41:19.624+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T10:41:25.111+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T10:41:27.518+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T10:41:27.668+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T10:41:29.913+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dd984276-2f30-49fd-bab4-c2b20ae8c7ef
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T10:41:29.975+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T10:41:30.196+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T10:41:30.507+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T10:41:30.722+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T10:41:30.744+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 28.303 seconds (process running for 29.98)
+2024-09-21T11:28:03.190+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T11:28:03.192+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T11:28:03.195+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-21T11:30:37.994+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-21T11:30:38.074+02:00  INFO 8088 --- [backend] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:30:38.109+02:00  INFO 8088 --- [backend] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-21T11:30:38.145+02:00  INFO 8088 --- [backend] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-21T11:30:38.691+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:30:38.691+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:30:39.160+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:30:39.162+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:30:39.383+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:30:39.383+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:30:39.407+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:30:39.423+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:30:39.423+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 718 ms
+2024-09-21T11:30:39.668+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:30:39.673+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:30:39.726+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:30:39.727+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-21T11:30:39.791+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@41fff25c
+2024-09-21T11:30:39.791+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-21T11:30:39.906+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:30:40.004+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:30:40.091+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:30:40.622+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 033d12cd-9cf3-4704-9572-bbd3db86f6d2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:30:40.627+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:30:40.672+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:30:40.852+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:30:40.871+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:30:40.887+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 2.249 seconds (process running for 2980.127)
+2024-09-21T11:30:40.892+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:33:28.263+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-21T11:33:28.280+02:00  INFO 8088 --- [backend] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:33:28.280+02:00  INFO 8088 --- [backend] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-21T11:33:28.308+02:00  INFO 8088 --- [backend] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-21T11:33:28.454+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:33:28.456+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:33:28.735+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:33:28.750+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:33:28.966+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:33:28.966+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:33:28.966+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:33:28.994+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:33:28.994+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 533 ms
+2024-09-21T11:33:29.162+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:33:29.165+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:33:29.177+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:33:29.179+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-09-21T11:33:29.244+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@740cf514
+2024-09-21T11:33:29.245+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-09-21T11:33:29.311+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:33:29.537+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:33:29.787+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:33:30.312+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 38a6bc05-9e6b-4b5f-be61-48929ea69633
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:33:30.326+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:33:30.392+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:33:30.540+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:33:30.559+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:33:30.577+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 2.159 seconds (process running for 3149.813)
+2024-09-21T11:33:30.577+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:33:31.981+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-21T11:33:31.997+02:00  INFO 8088 --- [backend] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:33:31.997+02:00  INFO 8088 --- [backend] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-09-21T11:33:32.007+02:00  INFO 8088 --- [backend] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-09-21T11:33:32.170+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:33:32.171+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:33:32.464+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:33:32.465+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:33:32.634+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:33:32.634+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:33:32.634+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:33:32.658+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:33:32.658+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 481 ms
+2024-09-21T11:33:32.800+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:33:32.803+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:33:32.813+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:33:32.815+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-09-21T11:33:32.877+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@2b4665ed
+2024-09-21T11:33:32.878+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-09-21T11:33:32.925+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:33:33.071+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:33:33.146+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:33:33.652+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eedc03f2-ac80-4079-98d3-26e37bf86aae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:33:33.652+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:33:33.708+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:33:33.855+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:33:33.882+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:33:33.889+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 1.781 seconds (process running for 3153.125)
+2024-09-21T11:33:33.892+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:34:17.649+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T11:34:17.649+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T11:34:17.649+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T11:38:38.634+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-21T11:38:38.686+02:00  INFO 8088 --- [backend] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:38:38.686+02:00  INFO 8088 --- [backend] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-09-21T11:38:38.700+02:00  INFO 8088 --- [backend] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-09-21T11:38:38.828+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:38:38.828+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:38:39.483+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:38:39.483+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:38:39.750+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:38:39.753+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:38:39.755+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:38:39.814+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:38:39.814+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 981 ms
+2024-09-21T11:38:39.975+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:38:39.990+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:38:40.014+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:38:40.014+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-09-21T11:38:40.119+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@72279507
+2024-09-21T11:38:40.120+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-09-21T11:38:40.189+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:38:40.304+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:38:40.397+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:38:40.976+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fb61742a-04cd-426f-b7c2-988e43e3a656
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:38:40.980+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:38:41.031+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:38:41.214+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:38:41.240+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:38:41.249+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 2.463 seconds (process running for 3460.485)
+2024-09-21T11:38:41.252+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:39:03.103+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T11:39:03.103+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T11:39:03.103+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T11:40:40.812+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-21T11:40:40.829+02:00  INFO 8088 --- [backend] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:40:40.833+02:00  INFO 8088 --- [backend] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-09-21T11:40:40.844+02:00  INFO 8088 --- [backend] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-09-21T11:40:40.960+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:40:40.960+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:40:41.257+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:40:41.257+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:40:41.440+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:40:41.457+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:40:41.457+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:40:41.473+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:40:41.473+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 513 ms
+2024-09-21T11:40:41.673+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:40:41.673+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:40:41.691+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:40:41.691+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-09-21T11:40:41.757+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@9f736f4
+2024-09-21T11:40:41.757+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-09-21T11:40:41.825+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:40:41.997+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:40:42.070+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:40:42.483+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 83111e64-b1db-469a-9236-b0a1aba8be6d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:40:42.505+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:40:42.574+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:40:42.845+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:40:42.891+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:40:42.891+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 1.96 seconds (process running for 3582.14)
+2024-09-21T11:40:42.911+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:41:06.146+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T11:41:06.146+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T11:41:06.146+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T11:47:59.721+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-21T11:47:59.736+02:00  INFO 8088 --- [backend] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:47:59.736+02:00  INFO 8088 --- [backend] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-09-21T11:47:59.752+02:00  INFO 8088 --- [backend] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-09-21T11:48:00.006+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:48:00.006+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:48:00.281+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:48:00.281+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:48:00.459+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:48:00.469+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:48:00.470+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:48:00.491+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:48:00.491+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 485 ms
+2024-09-21T11:48:00.685+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:48:00.685+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:48:00.685+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:48:00.702+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-09-21T11:48:00.769+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@7b54fd1
+2024-09-21T11:48:00.769+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-09-21T11:48:00.819+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:48:00.945+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:48:01.011+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:48:01.418+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ede954d1-e2aa-471d-a2d3-6acf0dd9353a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:48:01.434+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:48:01.469+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:48:01.635+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:48:01.669+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:48:01.676+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 1.708 seconds (process running for 4020.912)
+2024-09-21T11:48:01.678+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:48:21.347+02:00  INFO 8088 --- [backend] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-21T11:48:21.386+02:00  INFO 8088 --- [backend] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:48:21.387+02:00  INFO 8088 --- [backend] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-09-21T11:48:21.394+02:00  INFO 8088 --- [backend] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-09-21T11:48:21.512+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Starting BackendApplication using Java 22.0.1 with PID 8088 (D:\Doc\Project\website\backend\target\classes started by THEOPHILE in D:\Doc\Project\website\backend)
+2024-09-21T11:48:21.512+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T11:48:21.746+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-21T11:48:21.746+02:00  INFO 8088 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-09-21T11:48:21.899+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T11:48:21.899+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T11:48:21.899+02:00  INFO 8088 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-21T11:48:21.926+02:00  INFO 8088 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T11:48:21.926+02:00  INFO 8088 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2024-09-21T11:48:22.078+02:00  INFO 8088 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-21T11:48:22.078+02:00  INFO 8088 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-21T11:48:22.084+02:00  INFO 8088 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-21T11:48:22.084+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-09-21T11:48:22.153+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@4f68293e
+2024-09-21T11:48:22.154+02:00  INFO 8088 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-09-21T11:48:22.192+02:00  INFO 8088 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-21T11:48:22.284+02:00  INFO 8088 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:48:22.326+02:00  WARN 8088 --- [backend] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-21T11:48:22.750+02:00  WARN 8088 --- [backend] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3b377364-8408-4347-b134-6bfd5a1b93d0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-21T11:48:22.753+02:00  INFO 8088 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-21T11:48:22.809+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-09-21T11:48:22.957+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T11:48:22.981+02:00  INFO 8088 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T11:48:22.988+02:00  INFO 8088 --- [backend] [restartedMain] c.theophile.backend.BackendApplication   : Started BackendApplication in 1.501 seconds (process running for 4042.224)
+2024-09-21T11:48:22.992+02:00  INFO 8088 --- [backend] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-21T11:48:37.851+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T11:48:37.851+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T11:48:37.851+02:00  INFO 8088 --- [backend] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T11:49:36.089+02:00  INFO 8088 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-21T11:49:36.090+02:00  INFO 8088 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-09-21T11:49:36.110+02:00  INFO 8088 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
